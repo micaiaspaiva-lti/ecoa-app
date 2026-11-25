@@ -1,6 +1,6 @@
 /* Service worker: mantém a casca do Ecoa disponível offline (para poder instalar como app).
    O conteúdo do sistema (Apps Script) é sempre buscado na rede. */
-const CACHE = 'ecoa-casca-v1';
+const CACHE = 'ecoa-casca-v2';
 const SHELL = ['./', './index.html', './apresentar/', './apresentar/index.html', './casca.css', './casca.js', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/simbolo.svg'];
 
