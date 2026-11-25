@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ecoa · Apresentar</title>
+  <meta name="description" content="Juntos, a gente ecoa. Crie sessões e apresente ao vivo.">
+  <meta name="theme-color" content="#0164C8">
+  <meta name="robots" content="noindex">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" type="image/png" href="../icons/icon-192.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../casca.css">
+</head>
+<body data-modo="apresentador" data-exec="https://script.google.com/a/macros/lti.net.br/s/AKfycbzcG5rJLjmrQBjgK3qCO-6SLLZvFMgmYrM6c6hafbLQbgdbg-l7oN9sAwHL_NxZkre_/exec" data-sw="../sw.js">
+  <div id="splash" class="overlay">
+    <img class="simbolo" src="../icons/simbolo.svg" alt="">
+    <p class="marca">ecoa</p>
+    <p class="slogan">Preparando o palco…</p>
+    <div class="barra"><i id="barraPct"></i></div>
+    <p class="pct"><span id="pct">0%</span> · carregando</p>
+  </div>
+
+  <div id="help" class="overlay" hidden>
+    <div class="card">
+      <img src="../icons/simbolo.svg" alt="">
+      <h1 id="helpTitle">Entre com sua conta da LTI</h1>
+      <p id="helpText">Apresentar no Ecoa é para colaboradores. Entre com sua conta Google <b>@lti.net.br</b> para continuar.</p>
+      <div class="btns">
+        <button class="btn primary" id="btnLogin">Entrar com Google</button>
+        <button class="btn" id="btnTentar">Já entrei, tentar de novo</button>
+      </div>
+    </div>
+    <p class="rodape">Vai só responder? <a href="../">Entre com o PIN</a></p>
+  </div>
+
+  <iframe id="app" title="Ecoa" allow="clipboard-write; fullscreen" allowfullscreen></iframe>
+  <script src="../casca.js"></script>
+</body>
+</html>

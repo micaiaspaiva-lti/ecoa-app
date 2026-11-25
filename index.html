@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ecoa · Participe</title>
+  <meta name="description" content="Juntos, a gente ecoa. Entre com o PIN da sala e responda ao vivo.">
+  <meta name="theme-color" content="#0164C8">
+  <meta name="robots" content="noindex">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ecoa">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://micaiaspaiva-lti.github.io/ecoa-app/">
+  <meta property="og:title" content="Ecoa · Participe">
+  <meta property="og:description" content="Juntos, a gente ecoa. Entre com o PIN da sala e responda ao vivo.">
+  <meta property="og:image" content="https://micaiaspaiva-lti.github.io/ecoa-app/capa.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="casca.css">
+</head>
+<body data-modo="participante" data-exec="https://script.google.com/macros/s/AKfycbzeeQ1Z92MBu-YQZGm9NDRubRVKg_6udf8Eq78K-o_IrGgQgib2O1VVVp6yHXhBMUMb/exec" data-sw="sw.js">
+  <div id="splash" class="overlay">
+    <img class="simbolo" src="icons/simbolo.svg" alt="">
+    <p class="marca">ecoa</p>
+    <p class="slogan">Juntos, a gente ecoa.</p>
+    <div class="barra"><i id="barraPct"></i></div>
+    <p class="pct"><span id="pct">0%</span> · entrando na sala</p>
+  </div>
+
+  <div id="help" class="overlay" hidden>
+    <div class="card">
+      <img src="icons/simbolo.svg" alt="">
+      <h1 id="helpTitle">Não conseguimos abrir o Ecoa</h1>
+      <p id="helpText">A conexão pode estar lenta. Tente de novo em instantes.</p>
+      <div class="btns"><button class="btn primary" id="btnTentar">Tentar de novo</button></div>
+    </div>
+  </div>
+
+  <iframe id="app" title="Ecoa" allow="clipboard-write; fullscreen" allowfullscreen></iframe>
+  <script src="casca.js"></script>
+</body>
+</html>
