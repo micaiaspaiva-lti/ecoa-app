@@ -66,6 +66,9 @@
     } else if (d.type === 'ecoa:rota' && MODO === 'apresentador' && /^#\/[\w\/-]*$/.test(d.hash || '')) {
       pronto();
       history.replaceState(null, '', location.pathname + (d.hash === '#/' ? '' : d.hash));
+    } else if (d.type === 'ecoa:pin' && MODO === 'participante') {
+      var pin = String(d.pin || '').replace(/\D/g, '').slice(0, 6);
+      history.replaceState(null, '', location.pathname + (pin.length === 6 ? '?pin=' + pin : ''));
     } else if (d.type === 'ecoa:telaCheia') {
       var el = document.documentElement;
       if (document.fullscreenElement) document.exitFullscreen().catch(function () {});
